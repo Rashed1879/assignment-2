@@ -1,7 +1,9 @@
 /* Google fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lobster&family=Manrope&family=Open+Sans&family=Poppins:wght@400;500&family=Work+Sans&display=swap");
 
 /* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +42,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 /* Header Styles */
 header {
   padding: 50px 0;
@@ -269,12 +272,15 @@ nav > ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .sponsers img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
+
 /* Extra Section or about us section styles */
+
 .about-section {
   margin-bottom: 100px;
   display: flex;
@@ -310,7 +316,9 @@ hr {
   color: var(--text-black);
   margin-bottom: 24px;
 }
+
 /* Footer Section Styles */
+
 footer {
   background-color: var(--bg-color);
   padding: 40px 0;
@@ -321,4 +329,79 @@ footer {
 footer p {
   font-size: 1.3rem;
   color: var(--text-dark-gray);
+}
+
+/* Media Queries */
+
+/* For Mobile Devices Max Width 576px */
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+  .header-section {
+    padding: 50px 10px;
+  }
+  .header-section-description {
+    width: 100%;
+  }
+  .feature-list-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .feature-list-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding: 0 10px;
+  }
+  .feature-list-text {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .features-section {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .features {
+    width: 100%;
+  }
+  .features-banner {
+    width: 100%;
+    text-align: center;
+  }
+  .experience {
+    transform: translate(0, 0);
+  }
+  .some-facts-section {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .awards {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .sponsors-section {
+    padding: 0 10px;
+  }
+  .sponsers {
+    gap: 10px;
+  }
+  .about-section {
+    padding: 0 10px;
+    position: static;
+    flex-direction: column;
+  }
+  .about-us {
+    width: 100%;
+    position: static;
+  }
+  footer {
+    padding: 0 5px;
+  }
 }
